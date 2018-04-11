@@ -4,7 +4,7 @@
 @implementation HeapSort
 
 /// 最大堆heap  最大／最小优先级队列
-+ (void)createBiggestHeap:(NSMutableArray *)list withSize:(int)size beIndex:(int)element{
++ (void)createBiggestHeap:(NSMutableArray *)list withSize:(int)size beIndex:(int)element {
     int lchild = element * 2 + 1,rchild = lchild + 1;//左右子树
     while (rchild < size) {//子树均在范围内
         //如果比左右子树都小，完成整理
@@ -28,18 +28,18 @@
 }
 
 //堆排序time:O(nlgn)
-+ (void)heapSort:(NSMutableArray *)list{
++ (void)heapSort:(NSMutableArray *)list {
     int i , size;
     size = [list count]/1.0;
     // 从子树开始整理树
     for (i = [list count]/1.0 - 1; i >= 0; i--) {
-        [self createBiggestHeap:list withSize:size beIndex:i];
+        [[self class] createBiggestHeap:list withSize:size beIndex:i];
     }
     //拆除树
     while (size > 0) {
         [list exchangeObjectAtIndex:size - 1 withObjectAtIndex:0];//将根（最小）与数组最末交换
         size--;//树大小减小
-        [self createBiggestHeap:list withSize:size beIndex:0];//整理树
+        [[self class] createBiggestHeap:list withSize:size beIndex:0];//整理树
     }
 }
 

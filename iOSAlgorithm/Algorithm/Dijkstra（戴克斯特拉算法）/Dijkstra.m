@@ -57,7 +57,7 @@
         [shortest addObject:@(-1)];
         [visited addObject:@(NO)];
     }
-    return [self dijkstra_alg:map withShotest:shortest withV:visited withO:orig];
+    return [[self class] dijkstra_alg:map withShotest:shortest withV:visited withO:orig];
 }
 
 @end

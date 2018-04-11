@@ -28,6 +28,7 @@
 		1FE50205207DBE08007C27B2 /* AMWGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE50204207DBE08007C27B2 /* AMWGraph.m */; };
 		1FE50209207DBE1A007C27B2 /* ShellSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE50208207DBE1A007C27B2 /* ShellSort.m */; };
 		1FE5020D207DBE2F007C27B2 /* Bfprt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE5020C207DBE2F007C27B2 /* Bfprt.m */; };
+		1FE50211207DEDDE007C27B2 /* SelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE50210207DEDDE007C27B2 /* SelectionSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,8 @@
 		1FE50208207DBE1A007C27B2 /* ShellSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellSort.m; sourceTree = "<group>"; };
 		1FE5020B207DBE2F007C27B2 /* Bfprt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bfprt.h; sourceTree = "<group>"; };
 		1FE5020C207DBE2F007C27B2 /* Bfprt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bfprt.m; sourceTree = "<group>"; };
+		1FE5020F207DEDDE007C27B2 /* SelectionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionSort.h; sourceTree = "<group>"; };
+		1FE50210207DEDDE007C27B2 /* SelectionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,7 @@
 		1FE501D1207DBCFD007C27B2 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				1FE5020E207DEDA5007C27B2 /* SelectionSort（选择排序） */,
 				1FE5020A207DBE2F007C27B2 /* BFPRT（线性查找） */,
 				1FE50206207DBE1A007C27B2 /* ShellSort（希尔排序） */,
 				1FE50202207DBE08007C27B2 /* DFS（深度优先算法） */,
@@ -268,6 +272,15 @@
 			path = "BFPRT（线性查找）";
 			sourceTree = "<group>";
 		};
+		1FE5020E207DEDA5007C27B2 /* SelectionSort（选择排序） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE5020F207DEDDE007C27B2 /* SelectionSort.h */,
+				1FE50210207DEDDE007C27B2 /* SelectionSort.m */,
+			);
+			path = "SelectionSort（选择排序）";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,6 +369,7 @@
 				1FE501F5207DBDB5007C27B2 /* Hanoi.m in Sources */,
 				1FE501BD207DBCF2007C27B2 /* AppDelegate.m in Sources */,
 				1FE50209207DBE1A007C27B2 /* ShellSort.m in Sources */,
+				1FE50211207DEDDE007C27B2 /* SelectionSort.m in Sources */,
 				1FE501DD207DBD4E007C27B2 /* DynamicProgramming.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

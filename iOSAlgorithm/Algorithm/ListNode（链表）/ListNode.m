@@ -69,11 +69,7 @@
     }
     node = current;
     
-    
-    
     return node;
-   
-    
 }
 
 @end

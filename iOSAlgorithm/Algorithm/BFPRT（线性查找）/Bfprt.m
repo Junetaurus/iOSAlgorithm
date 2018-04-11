@@ -16,8 +16,8 @@
     }
 }
 
-+ (void)bubbleSortWithArray:(NSMutableArray *)array{
-    return [self bubbleSortWithArray:array withFirst:0 withEnd:[array count] - 1];
++ (void)bubbleSortWithArray:(NSMutableArray *)array {
+    return [[self class] bubbleSortWithArray:array withFirst:0 withEnd:[array count] - 1];
 }
 
 
@@ -60,7 +60,7 @@
 + (NSInteger)selectModify:(NSMutableArray *)array withP:(NSInteger)p withR:(NSInteger)r withK:(NSInteger)k{
     NSInteger i;
     if (r - p + 1 <= 5) {
-        [self bubbleSortWithArray:array withFirst:p withEnd:r];
+        [[self class] bubbleSortWithArray:array withFirst:p withEnd:r];
         return [array[p + k - 1] integerValue];
     }
     
@@ -68,23 +68,23 @@
     //分别找出各组的中位数，再将各组的中位数与数组开头的数据按组的顺序依次交换
     for (i = 0; i < (r-p+1)/5;i++ ) {
         NSInteger s = p + 5*i,t=s+4;
-        [self bubbleSortWithArray:array withFirst:s withEnd:t];
+        [[self class] bubbleSortWithArray:array withFirst:s withEnd:t];
         id temp = array[p + i];
         array[p + i] = array[s + 2];
         array[s + 2] = temp;
     }
     //对这些各组的中位数
     //按同样的方法继续求出中位数，最后得出的整个数组的中位数 x
-    NSInteger x = [self selectModify:array withP:p withR: p + (r - p + 1) / 5 - 1 withK:(r - p + 6) / 10];
+    NSInteger x = [[self class] selectModify:array withP:p withR: p + (r - p + 1) / 5 - 1 withK:(r - p + 6) / 10];
     
-    i = [self partitionModify:array withP:p withR:r withX:x];
+    i = [[self class] partitionModify:array withP:p withR:r withX:x];
     
     NSInteger j = i - p + 1;
     
     if (k <= j) {
-        return [self selectModify:array withP:p withR:i withK:k];
+        return [[self class] selectModify:array withP:p withR:i withK:k];
     }else{
-        return [self selectModify:array withP:i+1 withR:r withK:k-j];
+        return [[self class] selectModify:array withP:i+1 withR:r withK:k-j];
     }
 }
 
@@ -92,6 +92,6 @@
 + (NSInteger)selectModify:(NSMutableArray *)array withNum:(NSInteger)n{
     if (n == 0 || n > [array count]) return -1;// 未查到
     
-    return [self selectModify:array withP:0 withR:[array count] - 1 withK:n];
+    return [[self class] selectModify:array withP:0 withR:[array count] - 1 withK:n];
 }
 @end

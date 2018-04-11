@@ -5,9 +5,6 @@
 
 + (NSInteger)selectModify:(NSMutableArray *)array withNum:(NSInteger)n;
 
-/// 冒泡排序
-//+ (void)bubbleSortWithArray:(NSMutableArray *)array;
-
 @end
 
 /******************************

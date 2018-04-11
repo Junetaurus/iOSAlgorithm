@@ -15,7 +15,7 @@
     BinaryTreeNode *root = nil;
     for (NSInteger i=0; i<values.count; i++) {
         NSInteger value = [(NSNumber *)[values objectAtIndex:i] integerValue];
-        root = [[self class] addTreeNode:root value:value];
+        root = [[[self class] class] addTreeNode:root value:value];
     }
     return root;
 }
@@ -59,8 +59,8 @@
 + (BinaryTreeNode *)invertBinaryTree:(BinaryTreeNode *)rootNode {
     if (!rootNode) {  return nil; }
     if (!rootNode.leftNode && !rootNode.rightNode) {  return rootNode; }
-    [self invertBinaryTree:rootNode.leftNode];
-    [self invertBinaryTree:rootNode.rightNode];
+    [[self class] invertBinaryTree:rootNode.leftNode];
+    [[self class] invertBinaryTree:rootNode.rightNode];
     BinaryTreeNode *tempNode = rootNode.leftNode;
     rootNode.leftNode = rootNode.rightNode;
     rootNode.rightNode = tempNode;
@@ -75,10 +75,10 @@
         block(rootNode.value);
     }
     if (rootNode.leftNode) {
-        [self treeFirstInformationWithNode:rootNode.leftNode resultBlock:block];
+        [[self class] treeFirstInformationWithNode:rootNode.leftNode resultBlock:block];
     }
     if (rootNode.rightNode) {
-        [self treeFirstInformationWithNode:rootNode.rightNode resultBlock:block];
+        [[self class] treeFirstInformationWithNode:rootNode.rightNode resultBlock:block];
     }
 }
 
@@ -86,24 +86,24 @@
 + (void)treeMiddleInformationWithNode:(BinaryTreeNode *)rootNode resultBlock:(void (^)(NSInteger value))block{
     
     if (rootNode.leftNode) {
-        [self treeMiddleInformationWithNode:rootNode.leftNode resultBlock:block];
+        [[self class] treeMiddleInformationWithNode:rootNode.leftNode resultBlock:block];
     }
     if (block) {
         block(rootNode.value);
     }
     if (rootNode.rightNode) {
-        [self treeMiddleInformationWithNode:rootNode.rightNode resultBlock:block];
+        [[self class] treeMiddleInformationWithNode:rootNode.rightNode resultBlock:block];
     }
 }
 
 /// 后序遍历
 + (void)treeLastInformationWithNode:(BinaryTreeNode *)rootNode resultBlock:(void (^)(NSInteger value))block{
     if (rootNode.leftNode) {
-        [self treeLastInformationWithNode:rootNode.leftNode resultBlock:block];
+        [[self class] treeLastInformationWithNode:rootNode.leftNode resultBlock:block];
     }
     
     if (rootNode.rightNode) {
-        [self treeLastInformationWithNode:rootNode.rightNode resultBlock:block];
+        [[self class] treeLastInformationWithNode:rootNode.rightNode resultBlock:block];
     }
     if (block) {
         block(rootNode.value);
@@ -114,21 +114,21 @@
 + (NSInteger)depathOfTree:(BinaryTreeNode *)rootNode{
     if (!rootNode) return 0;
     if (!rootNode.leftNode && !rootNode.rightNode) return 1;
-    NSInteger leftDepth = [self depathOfTree:rootNode.leftNode];
-    NSInteger rightDepth = [self depathOfTree:rootNode.rightNode];
+    NSInteger leftDepth = [[self class] depathOfTree:rootNode.leftNode];
+    NSInteger rightDepth = [[self class] depathOfTree:rootNode.rightNode];
     return MAX(leftDepth, rightDepth) + 1;
 }
 
 /// 二叉树所有节点数  节点数=左子树节点数+右子树节点数+1（根节点）
 + (NSInteger)numberOfNodesInTree:(BinaryTreeNode *)rootNode{
     if (!rootNode) return 0;
-    return [self numberOfNodesInTree:rootNode.leftNode] + [self numberOfNodesInTree:rootNode.rightNode] + 1;
+    return [[self class] numberOfNodesInTree:rootNode.leftNode] + [[self class] numberOfNodesInTree:rootNode.rightNode] + 1;
 }
 
 //二叉树中某个节点到根节点的路径
 + (NSArray *)pathOfTreeNode:(BinaryTreeNode *)treeNode inTree:(BinaryTreeNode *)rootNode {
     NSMutableArray *pathArray = [NSMutableArray array];
-    [self isFoundTreeNode:treeNode inTree:rootNode routePath:pathArray];
+    [[self class] isFoundTreeNode:treeNode inTree:rootNode routePath:pathArray];
     return pathArray;
 }
 
@@ -168,10 +168,10 @@
     //压入根节点，进行递归
     [path addObject:rootNode];
     //先从左子树中查找
-    BOOL find = [self isFoundTreeNode:treeNode inTree:rootNode.leftNode routePath:path];
+    BOOL find = [[self class] isFoundTreeNode:treeNode inTree:rootNode.leftNode routePath:path];
     //未找到，再从右子树查找
     if (!find) {
-        find = [self isFoundTreeNode:treeNode inTree:rootNode.rightNode routePath:path];
+        find = [[self class] isFoundTreeNode:treeNode inTree:rootNode.rightNode routePath:path];
     }
     //如果2边都没查找到，则弹出此根节点
     if (!find) {

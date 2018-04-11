@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+#import "BubbleSort.h"
+#import "SelectionSort.h"
+
 @interface ViewController ()
 
 @end
@@ -16,6 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSMutableArray *array1 = [@[@6, @2, @4, @1, @5, @9] mutableCopy];
+    [SelectionSort selectionSortWithArray:array1];
+    NSLog(@"%@",array1);
+    
+    NSMutableArray *array2 = [@[@6, @2, @4, @1, @5, @9] mutableCopy];
+    [BubbleSort bubbleSortWithArray:array2];
+    NSLog(@"%@",array2);
     // Do any additional setup after loading the view, typically from a nib.
 }
 

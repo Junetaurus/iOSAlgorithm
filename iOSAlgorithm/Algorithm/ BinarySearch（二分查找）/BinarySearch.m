@@ -18,15 +18,15 @@
 + (NSInteger)binarySearchWithRecursion:(NSArray *)srcArray withDes:(NSNumber *)des{
     NSInteger low = 0;
     NSInteger high = [srcArray count] - 1;
-    return [self binSearch:srcArray withLow:low withHigh:high withKey:des];
+    return [[self class] binSearch:srcArray withLow:low withHigh:high withKey:des];
 }
 
 + (NSInteger)binSearch:(NSArray *)srcArray withLow:(NSInteger)low withHigh:(NSInteger)high withKey:(NSNumber *)key{
     if (low <= high) {
         NSInteger mid = (low + high)/2;
         if ([key integerValue] == [srcArray[mid] integerValue]) return mid;
-        else if([key integerValue] < [srcArray[mid] integerValue]) return [self binSearch:srcArray withLow:low withHigh:(mid - 1) withKey:key];
-        else return [self binSearch:srcArray withLow:mid+1 withHigh:high withKey:key];
+        else if([key integerValue] < [srcArray[mid] integerValue]) return [[self class] binSearch:srcArray withLow:low withHigh:(mid - 1) withKey:key];
+        else return [[self class] binSearch:srcArray withLow:mid+1 withHigh:high withKey:key];
     }else{
         return -1;
     }
