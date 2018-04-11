@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FE501BD207DBCF2007C27B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501BC207DBCF2007C27B2 /* AppDelegate.m */; };
+		1FE501C0207DBCF2007C27B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501BF207DBCF2007C27B2 /* ViewController.m */; };
+		1FE501C3207DBCF2007C27B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE501C1207DBCF2007C27B2 /* Main.storyboard */; };
+		1FE501C5207DBCF2007C27B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE501C4207DBCF2007C27B2 /* Assets.xcassets */; };
+		1FE501C8207DBCF2007C27B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE501C6207DBCF2007C27B2 /* LaunchScreen.storyboard */; };
+		1FE501CB207DBCF2007C27B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501CA207DBCF2007C27B2 /* main.m */; };
+		1FE501D5207DBD17007C27B2 /* InsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501D4207DBD17007C27B2 /* InsertSort.m */; };
+		1FE501D9207DBD39007C27B2 /* Dijkstra.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501D8207DBD39007C27B2 /* Dijkstra.m */; };
+		1FE501DD207DBD4E007C27B2 /* DynamicProgramming.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501DC207DBD4E007C27B2 /* DynamicProgramming.m */; };
+		1FE501E1207DBD63007C27B2 /* HeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501E0207DBD63007C27B2 /* HeapSort.m */; };
+		1FE501E8207DBD7E007C27B2 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501E4207DBD7E007C27B2 /* BinaryTree.m */; };
+		1FE501E9207DBD7E007C27B2 /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501E6207DBD7E007C27B2 /* BinaryTreeNode.m */; };
+		1FE501ED207DBD95007C27B2 /* BinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501EC207DBD95007C27B2 /* BinarySearch.m */; };
+		1FE501F1207DBDA4007C27B2 /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501F0207DBDA4007C27B2 /* MergeSort.m */; };
+		1FE501F5207DBDB5007C27B2 /* Hanoi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501F4207DBDB4007C27B2 /* Hanoi.m */; };
+		1FE501F9207DBDC7007C27B2 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501F8207DBDC7007C27B2 /* QuickSort.m */; };
+		1FE501FD207DBDE0007C27B2 /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501FC207DBDE0007C27B2 /* ListNode.m */; };
+		1FE50201207DBDF4007C27B2 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE50200207DBDF4007C27B2 /* BubbleSort.m */; };
+		1FE50205207DBE08007C27B2 /* AMWGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE50204207DBE08007C27B2 /* AMWGraph.m */; };
+		1FE50209207DBE1A007C27B2 /* ShellSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE50208207DBE1A007C27B2 /* ShellSort.m */; };
+		1FE5020D207DBE2F007C27B2 /* Bfprt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE5020C207DBE2F007C27B2 /* Bfprt.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FE501B8207DBCF2007C27B2 /* iOSAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE501BB207DBCF2007C27B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1FE501BC207DBCF2007C27B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1FE501BE207DBCF2007C27B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1FE501BF207DBCF2007C27B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1FE501C2207DBCF2007C27B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FE501C4207DBCF2007C27B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FE501C7207DBCF2007C27B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FE501C9207DBCF2007C27B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE501CA207DBCF2007C27B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FE501D3207DBD17007C27B2 /* InsertSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertSort.h; sourceTree = "<group>"; };
+		1FE501D4207DBD17007C27B2 /* InsertSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertSort.m; sourceTree = "<group>"; };
+		1FE501D7207DBD39007C27B2 /* Dijkstra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dijkstra.h; sourceTree = "<group>"; };
+		1FE501D8207DBD39007C27B2 /* Dijkstra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dijkstra.m; sourceTree = "<group>"; };
+		1FE501DB207DBD4E007C27B2 /* DynamicProgramming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicProgramming.h; sourceTree = "<group>"; };
+		1FE501DC207DBD4E007C27B2 /* DynamicProgramming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicProgramming.m; sourceTree = "<group>"; };
+		1FE501DF207DBD63007C27B2 /* HeapSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
+		1FE501E0207DBD63007C27B2 /* HeapSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeapSort.m; sourceTree = "<group>"; };
+		1FE501E3207DBD7E007C27B2 /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
+		1FE501E4207DBD7E007C27B2 /* BinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
+		1FE501E5207DBD7E007C27B2 /* BinaryTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
+		1FE501E6207DBD7E007C27B2 /* BinaryTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
+		1FE501E7207DBD7E007C27B2 /* ReadMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadMe.h; sourceTree = "<group>"; };
+		1FE501EB207DBD95007C27B2 /* BinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearch.h; sourceTree = "<group>"; };
+		1FE501EC207DBD95007C27B2 /* BinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearch.m; sourceTree = "<group>"; };
+		1FE501EF207DBDA4007C27B2 /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
+		1FE501F0207DBDA4007C27B2 /* MergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeSort.m; sourceTree = "<group>"; };
+		1FE501F3207DBDB4007C27B2 /* Hanoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hanoi.h; sourceTree = "<group>"; };
+		1FE501F4207DBDB4007C27B2 /* Hanoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hanoi.m; sourceTree = "<group>"; };
+		1FE501F7207DBDC7007C27B2 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		1FE501F8207DBDC7007C27B2 /* QuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickSort.m; sourceTree = "<group>"; };
+		1FE501FB207DBDE0007C27B2 /* ListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
+		1FE501FC207DBDE0007C27B2 /* ListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListNode.m; sourceTree = "<group>"; };
+		1FE501FF207DBDF4007C27B2 /* BubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
+		1FE50200207DBDF4007C27B2 /* BubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleSort.m; sourceTree = "<group>"; };
+		1FE50203207DBE08007C27B2 /* AMWGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMWGraph.h; sourceTree = "<group>"; };
+		1FE50204207DBE08007C27B2 /* AMWGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMWGraph.m; sourceTree = "<group>"; };
+		1FE50207207DBE1A007C27B2 /* ShellSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellSort.h; sourceTree = "<group>"; };
+		1FE50208207DBE1A007C27B2 /* ShellSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellSort.m; sourceTree = "<group>"; };
+		1FE5020B207DBE2F007C27B2 /* Bfprt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bfprt.h; sourceTree = "<group>"; };
+		1FE5020C207DBE2F007C27B2 /* Bfprt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bfprt.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FE501B5207DBCF2007C27B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FE501AF207DBCF2007C27B2 = {
+			isa = PBXGroup;
+			children = (
+				1FE501BA207DBCF2007C27B2 /* iOSAlgorithm */,
+				1FE501B9207DBCF2007C27B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FE501B9207DBCF2007C27B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501B8207DBCF2007C27B2 /* iOSAlgorithm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FE501BA207DBCF2007C27B2 /* iOSAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501D1207DBCFD007C27B2 /* Algorithm */,
+				1FE501BB207DBCF2007C27B2 /* AppDelegate.h */,
+				1FE501BC207DBCF2007C27B2 /* AppDelegate.m */,
+				1FE501BE207DBCF2007C27B2 /* ViewController.h */,
+				1FE501BF207DBCF2007C27B2 /* ViewController.m */,
+				1FE501C1207DBCF2007C27B2 /* Main.storyboard */,
+				1FE501C4207DBCF2007C27B2 /* Assets.xcassets */,
+				1FE501C6207DBCF2007C27B2 /* LaunchScreen.storyboard */,
+				1FE501C9207DBCF2007C27B2 /* Info.plist */,
+				1FE501CA207DBCF2007C27B2 /* main.m */,
+			);
+			path = iOSAlgorithm;
+			sourceTree = "<group>";
+		};
+		1FE501D1207DBCFD007C27B2 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				1FE5020A207DBE2F007C27B2 /* BFPRT（线性查找） */,
+				1FE50206207DBE1A007C27B2 /* ShellSort（希尔排序） */,
+				1FE50202207DBE08007C27B2 /* DFS（深度优先算法） */,
+				1FE501FE207DBDF4007C27B2 /* Bubble（冒泡排序） */,
+				1FE501FA207DBDE0007C27B2 /* ListNode（链表） */,
+				1FE501F6207DBDC7007C27B2 /* QuickSort（快速排序） */,
+				1FE501F2207DBDB4007C27B2 /* Hanoi（汉诺塔） */,
+				1FE501EE207DBDA4007C27B2 /* MergeSort（归并排序） */,
+				1FE501EA207DBD95007C27B2 /*  BinarySearch（二分查找） */,
+				1FE501E2207DBD7E007C27B2 /* BinaryTree（二叉树） */,
+				1FE501DE207DBD63007C27B2 /* HeapSort（堆排序） */,
+				1FE501DA207DBD4E007C27B2 /* Dynamic（动态规划） */,
+				1FE501D6207DBD39007C27B2 /* Dijkstra（戴克斯特拉算法） */,
+				1FE501D2207DBD17007C27B2 /* insertSort（插入排序） */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		1FE501D2207DBD17007C27B2 /* insertSort（插入排序） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501D3207DBD17007C27B2 /* InsertSort.h */,
+				1FE501D4207DBD17007C27B2 /* InsertSort.m */,
+			);
+			path = "insertSort（插入排序）";
+			sourceTree = "<group>";
+		};
+		1FE501D6207DBD39007C27B2 /* Dijkstra（戴克斯特拉算法） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501D7207DBD39007C27B2 /* Dijkstra.h */,
+				1FE501D8207DBD39007C27B2 /* Dijkstra.m */,
+			);
+			path = "Dijkstra（戴克斯特拉算法）";
+			sourceTree = "<group>";
+		};
+		1FE501DA207DBD4E007C27B2 /* Dynamic（动态规划） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501DB207DBD4E007C27B2 /* DynamicProgramming.h */,
+				1FE501DC207DBD4E007C27B2 /* DynamicProgramming.m */,
+			);
+			path = "Dynamic（动态规划）";
+			sourceTree = "<group>";
+		};
+		1FE501DE207DBD63007C27B2 /* HeapSort（堆排序） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501DF207DBD63007C27B2 /* HeapSort.h */,
+				1FE501E0207DBD63007C27B2 /* HeapSort.m */,
+			);
+			path = "HeapSort（堆排序）";
+			sourceTree = "<group>";
+		};
+		1FE501E2207DBD7E007C27B2 /* BinaryTree（二叉树） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501E3207DBD7E007C27B2 /* BinaryTree.h */,
+				1FE501E4207DBD7E007C27B2 /* BinaryTree.m */,
+				1FE501E5207DBD7E007C27B2 /* BinaryTreeNode.h */,
+				1FE501E6207DBD7E007C27B2 /* BinaryTreeNode.m */,
+				1FE501E7207DBD7E007C27B2 /* ReadMe.h */,
+			);
+			path = "BinaryTree（二叉树）";
+			sourceTree = "<group>";
+		};
+		1FE501EA207DBD95007C27B2 /*  BinarySearch（二分查找） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501EB207DBD95007C27B2 /* BinarySearch.h */,
+				1FE501EC207DBD95007C27B2 /* BinarySearch.m */,
+			);
+			path = " BinarySearch（二分查找）";
+			sourceTree = "<group>";
+		};
+		1FE501EE207DBDA4007C27B2 /* MergeSort（归并排序） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501EF207DBDA4007C27B2 /* MergeSort.h */,
+				1FE501F0207DBDA4007C27B2 /* MergeSort.m */,
+			);
+			path = "MergeSort（归并排序）";
+			sourceTree = "<group>";
+		};
+		1FE501F2207DBDB4007C27B2 /* Hanoi（汉诺塔） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501F3207DBDB4007C27B2 /* Hanoi.h */,
+				1FE501F4207DBDB4007C27B2 /* Hanoi.m */,
+			);
+			path = "Hanoi（汉诺塔）";
+			sourceTree = "<group>";
+		};
+		1FE501F6207DBDC7007C27B2 /* QuickSort（快速排序） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501F7207DBDC7007C27B2 /* QuickSort.h */,
+				1FE501F8207DBDC7007C27B2 /* QuickSort.m */,
+			);
+			path = "QuickSort（快速排序）";
+			sourceTree = "<group>";
+		};
+		1FE501FA207DBDE0007C27B2 /* ListNode（链表） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501FB207DBDE0007C27B2 /* ListNode.h */,
+				1FE501FC207DBDE0007C27B2 /* ListNode.m */,
+			);
+			path = "ListNode（链表）";
+			sourceTree = "<group>";
+		};
+		1FE501FE207DBDF4007C27B2 /* Bubble（冒泡排序） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE501FF207DBDF4007C27B2 /* BubbleSort.h */,
+				1FE50200207DBDF4007C27B2 /* BubbleSort.m */,
+			);
+			path = "Bubble（冒泡排序）";
+			sourceTree = "<group>";
+		};
+		1FE50202207DBE08007C27B2 /* DFS（深度优先算法） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE50203207DBE08007C27B2 /* AMWGraph.h */,
+				1FE50204207DBE08007C27B2 /* AMWGraph.m */,
+			);
+			path = "DFS（深度优先算法）";
+			sourceTree = "<group>";
+		};
+		1FE50206207DBE1A007C27B2 /* ShellSort（希尔排序） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE50207207DBE1A007C27B2 /* ShellSort.h */,
+				1FE50208207DBE1A007C27B2 /* ShellSort.m */,
+			);
+			path = "ShellSort（希尔排序）";
+			sourceTree = "<group>";
+		};
+		1FE5020A207DBE2F007C27B2 /* BFPRT（线性查找） */ = {
+			isa = PBXGroup;
+			children = (
+				1FE5020B207DBE2F007C27B2 /* Bfprt.h */,
+				1FE5020C207DBE2F007C27B2 /* Bfprt.m */,
+			);
+			path = "BFPRT（线性查找）";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FE501B7207DBCF2007C27B2 /* iOSAlgorithm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FE501CE207DBCF2007C27B2 /* Build configuration list for PBXNativeTarget "iOSAlgorithm" */;
+			buildPhases = (
+				1FE501B4207DBCF2007C27B2 /* Sources */,
+				1FE501B5207DBCF2007C27B2 /* Frameworks */,
+				1FE501B6207DBCF2007C27B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSAlgorithm;
+			productName = iOSAlgorithm;
+			productReference = 1FE501B8207DBCF2007C27B2 /* iOSAlgorithm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FE501B0207DBCF2007C27B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ZCG;
+				TargetAttributes = {
+					1FE501B7207DBCF2007C27B2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1FE501B3207DBCF2007C27B2 /* Build configuration list for PBXProject "iOSAlgorithm" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FE501AF207DBCF2007C27B2;
+			productRefGroup = 1FE501B9207DBCF2007C27B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FE501B7207DBCF2007C27B2 /* iOSAlgorithm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FE501B6207DBCF2007C27B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE501C8207DBCF2007C27B2 /* LaunchScreen.storyboard in Resources */,
+				1FE501C5207DBCF2007C27B2 /* Assets.xcassets in Resources */,
+				1FE501C3207DBCF2007C27B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FE501B4207DBCF2007C27B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE5020D207DBE2F007C27B2 /* Bfprt.m in Sources */,
+				1FE501ED207DBD95007C27B2 /* BinarySearch.m in Sources */,
+				1FE501E1207DBD63007C27B2 /* HeapSort.m in Sources */,
+				1FE501F1207DBDA4007C27B2 /* MergeSort.m in Sources */,
+				1FE501F9207DBDC7007C27B2 /* QuickSort.m in Sources */,
+				1FE501D5207DBD17007C27B2 /* InsertSort.m in Sources */,
+				1FE501D9207DBD39007C27B2 /* Dijkstra.m in Sources */,
+				1FE501C0207DBCF2007C27B2 /* ViewController.m in Sources */,
+				1FE501E9207DBD7E007C27B2 /* BinaryTreeNode.m in Sources */,
+				1FE501E8207DBD7E007C27B2 /* BinaryTree.m in Sources */,
+				1FE501FD207DBDE0007C27B2 /* ListNode.m in Sources */,
+				1FE501CB207DBCF2007C27B2 /* main.m in Sources */,
+				1FE50201207DBDF4007C27B2 /* BubbleSort.m in Sources */,
+				1FE50205207DBE08007C27B2 /* AMWGraph.m in Sources */,
+				1FE501F5207DBDB5007C27B2 /* Hanoi.m in Sources */,
+				1FE501BD207DBCF2007C27B2 /* AppDelegate.m in Sources */,
+				1FE50209207DBE1A007C27B2 /* ShellSort.m in Sources */,
+				1FE501DD207DBD4E007C27B2 /* DynamicProgramming.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FE501C1207DBCF2007C27B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FE501C2207DBCF2007C27B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FE501C6207DBCF2007C27B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FE501C7207DBCF2007C27B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FE501CC207DBCF2007C27B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1FE501CD207DBCF2007C27B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FE501CF207DBCF2007C27B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Y83Y3MD48;
+				INFOPLIST_FILE = iOSAlgorithm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangwang.iOSAlgorithm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FE501D0207DBCF2007C27B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Y83Y3MD48;
+				INFOPLIST_FILE = iOSAlgorithm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangwang.iOSAlgorithm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FE501B3207DBCF2007C27B2 /* Build configuration list for PBXProject "iOSAlgorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE501CC207DBCF2007C27B2 /* Debug */,
+				1FE501CD207DBCF2007C27B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FE501CE207DBCF2007C27B2 /* Build configuration list for PBXNativeTarget "iOSAlgorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE501CF207DBCF2007C27B2 /* Debug */,
+				1FE501D0207DBCF2007C27B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FE501B0207DBCF2007C27B2 /* Project object */;
+}
