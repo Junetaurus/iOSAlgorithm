@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FBC6DB02090875F004FF16D /* RadixSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBC6DAF2090875F004FF16D /* RadixSort.m */; };
 		1FE501BD207DBCF2007C27B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501BC207DBCF2007C27B2 /* AppDelegate.m */; };
 		1FE501C0207DBCF2007C27B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE501BF207DBCF2007C27B2 /* ViewController.m */; };
 		1FE501C3207DBCF2007C27B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE501C1207DBCF2007C27B2 /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FBC6DAE2090875F004FF16D /* RadixSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadixSort.h; sourceTree = "<group>"; };
+		1FBC6DAF2090875F004FF16D /* RadixSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadixSort.m; sourceTree = "<group>"; };
 		1FE501B8207DBCF2007C27B2 /* iOSAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE501BB207DBCF2007C27B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1FE501BC207DBCF2007C27B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FBC6DAD2090872D004FF16D /* RadixSort（基数排序） */ = {
+			isa = PBXGroup;
+			children = (
+				1FBC6DAE2090875F004FF16D /* RadixSort.h */,
+				1FBC6DAF2090875F004FF16D /* RadixSort.m */,
+			);
+			path = "RadixSort（基数排序）";
+			sourceTree = "<group>";
+		};
 		1FE501AF207DBCF2007C27B2 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 		1FE501D1207DBCFD007C27B2 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				1FBC6DAD2090872D004FF16D /* RadixSort（基数排序） */,
 				1FE5020E207DEDA5007C27B2 /* SelectionSort（选择排序） */,
 				1FE5020A207DBE2F007C27B2 /* BFPRT（线性查找） */,
 				1FE50206207DBE1A007C27B2 /* ShellSort（希尔排序） */,
@@ -366,6 +379,7 @@
 				1FE501CB207DBCF2007C27B2 /* main.m in Sources */,
 				1FE50201207DBDF4007C27B2 /* BubbleSort.m in Sources */,
 				1FE50205207DBE08007C27B2 /* AMWGraph.m in Sources */,
+				1FBC6DB02090875F004FF16D /* RadixSort.m in Sources */,
 				1FE501F5207DBDB5007C27B2 /* Hanoi.m in Sources */,
 				1FE501BD207DBCF2007C27B2 /* AppDelegate.m in Sources */,
 				1FE50209207DBE1A007C27B2 /* ShellSort.m in Sources */,

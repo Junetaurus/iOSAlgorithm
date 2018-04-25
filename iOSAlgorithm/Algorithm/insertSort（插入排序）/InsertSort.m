@@ -3,35 +3,35 @@
 
 @implementation InsertSort
 
-+ (void)insertSort:(NSMutableArray *)list{
-    for (int i = 1; i < [list count]; i++) {
-        int j = i;
-        NSInteger temp = [[list objectAtIndex:i] integerValue];
-        while (j >0 && temp < [[list objectAtIndex:j - 1] integerValue]) {
-            [list replaceObjectAtIndex:j withObject:[list objectAtIndex:(j - 1)]];
++ (void)insertSort:(NSMutableArray *)array {
+    for (NSInteger i = 1; i < array.count; i++) {
+        NSInteger j = i;
+        NSInteger temp = [array[i] integerValue];
+        while (j > 0 && temp < [array[j - 1] integerValue]) {
+            [array replaceObjectAtIndex:j withObject:array[j - 1]];
             j--;
         }
-        [list replaceObjectAtIndex:j withObject:[NSNumber numberWithInteger:temp]];
+        [array replaceObjectAtIndex:j withObject:[NSNumber numberWithInteger:temp]];
     }
 }
 
-+ (void)binaryInsertSort:(NSMutableArray *)list{
-    for (int i = 1; i < [list count]; i++) {
-        NSInteger temp = [[list objectAtIndex:i] integerValue];
-        int left = 0;
-        int right = i - 1;
++ (void)binaryInsertSort:(NSMutableArray *)array {
+    for (NSInteger i = 1; i < array.count; i++) {
+        NSInteger temp = [array[i] integerValue];
+        NSInteger left = 0;
+        NSInteger right = i - 1;
         while (left <= right) {
-            int middle = (left + right) / 2;
-            if (temp < [[list objectAtIndex:middle] integerValue]) {
+            NSInteger middle = (left + right) / 2;
+            if (temp < [array[middle] integerValue]) {
                 right = middle - 1;
             }else{
                 left = middle + 1;
             }
         }
-        for (int j = i; j > left; j--) {
-            [list replaceObjectAtIndex:j withObject:[list objectAtIndex:j-1]];
+        for (NSInteger j = i; j > left; j--) {
+            [array replaceObjectAtIndex:j withObject:array[j - 1]];
         }
-        [list replaceObjectAtIndex:left withObject:[NSNumber numberWithInteger:temp]];
+        [array replaceObjectAtIndex:left withObject:[NSNumber numberWithInteger:temp]];
     }
 }
 

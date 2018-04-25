@@ -3,6 +3,6 @@
 
 @interface ShellSort : NSObject
 
-+ (void)shellSort:(NSMutableArray *)list;
++ (void)shellSort:(NSMutableArray *)array;
 
 @end

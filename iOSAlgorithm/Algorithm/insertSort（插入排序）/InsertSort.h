@@ -4,8 +4,8 @@
 @interface InsertSort : NSObject
 
 /// 直接插入排序
-+ (void)insertSort:(NSMutableArray *)list;
++ (void)insertSort:(NSMutableArray *)array;
 
 /// 折半插入排序
-+ (void)binaryInsertSort:(NSMutableArray *)list;
++ (void)binaryInsertSort:(NSMutableArray *)array;
 @end

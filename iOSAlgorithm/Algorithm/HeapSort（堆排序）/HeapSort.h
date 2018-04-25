@@ -6,6 +6,6 @@
 /**
  堆排序
  */
-+ (void)heapSort:(NSMutableArray *)list;
++ (void)heapSort:(NSMutableArray *)array;
 
 @end

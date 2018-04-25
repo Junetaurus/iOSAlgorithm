@@ -3,7 +3,7 @@
 
 @interface MergeSort : NSObject
 
-+ (NSMutableArray *)mergeSort:(NSMutableArray *)ary withCapacity:(NSInteger)n;
++ (NSMutableArray *)mergeSort:(NSMutableArray *)array withCapacity:(NSInteger)n;
 
 @end
 
